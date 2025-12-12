@@ -1,0 +1,100 @@
+.search-rides h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.search-form-card {
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: end;
+}
+
+.filter-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.rides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ride-card {
+  transition: transform 0.2s ease;
+}
+
+.ride-card:hover {
+  transform: translateY(-2px);
+}
+
+.ride-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.ride-header h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ride-driver {
+  color: #666;
+  font-size: 14px;
+}
+
+.ride-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.ride-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.ride-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .ride-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ride-price {
+    font-size: 24px;
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-row {
+    grid-template-columns: 1fr;
+  }
+}
+

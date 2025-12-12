@@ -1,0 +1,134 @@
+.my-bookings h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-card {
+  transition: transform 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.booking-header h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.booking-driver {
+  color: #666;
+  font-size: 14px;
+}
+
+.booking-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  text-align: right;
+}
+
+.booking-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.booking-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.booking-rating,
+.rating-form {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.booking-rating p {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.booking-rating.muted {
+  color: #777;
+  font-style: italic;
+}
+
+.rating-comment {
+  color: #555;
+  font-style: italic;
+}
+
+.rating-form h4 {
+  margin-bottom: 12px;
+}
+
+.rating-form .btn {
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .booking-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .booking-price {
+    font-size: 20px;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+}
+

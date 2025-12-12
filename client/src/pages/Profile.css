@@ -1,0 +1,36 @@
+.profile-page h1 {
+  margin-bottom: 30px;
+}
+
+.profile-stats .stat-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-label {
+  color: #666;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+.stat-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-form-card {
+  max-width: 520px;
+}
+
+.profile-form-card h2 {
+  margin-bottom: 20px;
+}
+

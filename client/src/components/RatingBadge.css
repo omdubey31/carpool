@@ -1,0 +1,36 @@
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 193, 7, 0.15);
+  color: #b36b00;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rating-badge-lg {
+  font-size: 16px;
+  padding: 6px 14px;
+}
+
+.rating-badge-sm {
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.rating-badge .rating-icon {
+  font-size: 16px;
+}
+
+.rating-badge .rating-count {
+  font-weight: 500;
+  color: #8c5a00;
+}
+
+.rating-badge.muted {
+  background: #f0f0f0;
+  color: #666;
+}
+
